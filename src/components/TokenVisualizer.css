@@ -1,0 +1,134 @@
+.visualizer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.visualizer-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.example-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.example-btn {
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background: var(--accent-bg);
+    border-color: var(--accent-border);
+    color: var(--accent);
+  }
+
+  &.active {
+    background: var(--accent-bg);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.visualizer-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-family: var(--mono);
+  font-size: 15px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: var(--accent);
+  }
+}
+
+.visualizer-stats {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 8px;
+  border-right: 1px solid var(--border);
+  gap: 4px;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: var(--mono);
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text);
+  text-align: center;
+}
+
+.token-display {
+  min-height: 80px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  line-height: 1.8;
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.token-chip {
+  display: inline-block;
+  background: color-mix(in srgb, var(--token-color) 20%, transparent);
+  border-bottom: 2px solid var(--token-color);
+  color: var(--text-h);
+  white-space: pre;
+  border-radius: 3px 3px 0 0;
+  padding: 0 1px;
+}
+
+.empty-hint {
+  color: var(--text);
+  font-style: italic;
+  font-family: var(--sans);
+}
+
+.visualizer-note {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
