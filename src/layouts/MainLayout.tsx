@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Brain, BookOpen, Presentation, Layers, Github } from 'lucide-react'
+import { BookOpen, Presentation, Layers, Github, SquareStack } from 'lucide-react'
 import { useComplexity } from '../context/ComplexityContext'
 import './MainLayout.css'
 
@@ -18,20 +18,19 @@ export default function MainLayout({ children, showNav = true }: MainLayoutProps
     <div className="layout">
       <header className="layout-header">
         <div className="header-content">
-          <Link to="/" className="header-logo">
-            <Brain size={24} />
-            <span>AI Learn</span>
-          </Link>
-
           {showNav && !isHome && (
             <nav className="header-nav">
-              <Link to="/gpt" className={`nav-link ${location.pathname.startsWith('/gpt') ? 'active' : ''}`}>
+              <Link to="/gpt" className={`nav-link ${location.pathname.startsWith('/gpt') && !location.pathname.includes('/slides') && !location.pathname.includes('/flashcards') ? 'active' : ''}`}>
                 <BookOpen size={16} />
                 Learn
               </Link>
-              <Link to="/gpt/slides" className={`nav-link ${location.pathname === '/gpt/slides' ? 'active' : ''}`}>
+              <Link to="/gpt/slides" className={`nav-link ${location.pathname.includes('/slides') ? 'active' : ''}`}>
                 <Presentation size={16} />
                 Slides
+              </Link>
+              <Link to="/gpt/flashcards" className={`nav-link ${location.pathname.includes('/flashcards') ? 'active' : ''}`}>
+                <SquareStack size={16} />
+                Flashcards
               </Link>
             </nav>
           )}
@@ -50,7 +49,7 @@ export default function MainLayout({ children, showNav = true }: MainLayoutProps
             </button>
 
             <a
-              href="https://github.com"
+              href="https://github.com/akrizs/ai-infograph"
               target="_blank"
               rel="noopener noreferrer"
               className="header-github"

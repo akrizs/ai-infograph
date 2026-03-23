@@ -1,0 +1,30 @@
+{
+  "id": "phase2-expansion-02",
+  "seq": "02",
+  "title": "Glossary - Searchable A-Z Glossary",
+  "status": "pending",
+  "depends_on": [],
+  "parallel": true,
+  "suggested_agent": "OpenFrontendSpecialist",
+  "context_files": [
+    "/home/akristensen.guest/.config/opencode/context/core/standards/code-quality.md"
+  ],
+  "reference_files": [
+    "/home/akristensen.guest/ai-infograph/src/App.tsx",
+    "/home/akristensen.guest/ai-infograph/src/index.css",
+    "/home/akristensen.guest/ai-infograph/src/components/TokenVisualizer.tsx",
+    "/home/akristensen.guest/ai-infograph/src/components/PricingTable.tsx"
+  ],
+  "acceptance_criteria": [
+    "Component renders with section-tag, H2, and description",
+    "A-Z glossary terms are displayed",
+    "Search/filter functionality works",
+    "Terms link to relevant sections in App.tsx",
+    "Follows existing visual style (purple accent, cards, dark mode)",
+    "Creates both .tsx and .css files"
+  ],
+  "deliverables": [
+    "src/components/Glossary.tsx",
+    "src/components/Glossary.css"
+  ]
+}

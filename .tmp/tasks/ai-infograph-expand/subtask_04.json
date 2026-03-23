@@ -1,0 +1,32 @@
+{
+  "id": "ai-infograph-expand-04",
+  "seq": "04",
+  "title": "VLM & Multimodal Models Section",
+  "status": "pending",
+  "depends_on": [],
+  "parallel": true,
+  "suggested_agent": "OpenFrontendSpecialist",
+  "context_files": [
+    "/home/akristensen.guest/.config/opencode/context/core/standards/code-quality.md"
+  ],
+  "reference_files": [
+    "src/App.tsx",
+    "src/App.css",
+    "src/components/InfraStack.tsx"
+  ],
+  "acceptance_criteria": [
+    "Section tag 'Concept' displays correctly",
+    "H2 heading 'VLM & Multimodal Models' present",
+    "3-column card grid shows: Vision-Language Fusion, Image Processing, Cross-modal Attention",
+    "Model comparison table: GPT-4V, Claude 3, Gemini Pro, Llava",
+    "Visual diagram of multimodal input pipeline",
+    "Dark mode styles applied correctly",
+    "Follows existing explainer-grid pattern for architecture diagrams"
+  ],
+  "deliverables": [
+    "src/components/VLMMultimodal.tsx",
+    "src/components/VLMMultimodal.css"
+  ],
+  "bounded_context": "ai-education",
+  "module": "components"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "phase2-expansion-04",
+  "seq": "04",
+  "title": "OpenSourceModels - Llama, Mistral, Gemma, DeepSeek",
+  "status": "pending",
+  "depends_on": [],
+  "parallel": true,
+  "suggested_agent": "OpenFrontendSpecialist",
+  "context_files": [
+    "/home/akristensen.guest/.config/opencode/context/core/standards/code-quality.md"
+  ],
+  "reference_files": [
+    "/home/akristensen.guest/ai-infograph/src/App.tsx",
+    "/home/akristensen.guest/ai-infograph/src/index.css",
+    "/home/akristensen.guest/ai-infograph/src/components/PricingTable.tsx",
+    "/home/akristensen.guest/ai-infograph/src/data/models.ts"
+  ],
+  "acceptance_criteria": [
+    "Component renders with section-tag, H2, and description",
+    "Covers Llama, Mistral, Gemma, DeepSeek models",
+    "Shows open weights landscape overview",
+    "Uses 3-column card grid layout with provider badges",
+    "Follows existing visual style (purple accent, dark mode)",
+    "Creates both .tsx and .css files"
+  ],
+  "deliverables": [
+    "src/components/OpenSourceModels.tsx",
+    "src/components/OpenSourceModels.css"
+  ]
+}

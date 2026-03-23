@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Brain, Sparkles, Layers, BookOpen, Presentation, Zap, ArrowRight } from 'lucide-react'
+import { Brain, Sparkles, Layers, BookOpen, Presentation, Zap, ArrowRight, SquareStack } from 'lucide-react'
 import './Home.css'
 
 const TOPICS = [
@@ -47,6 +47,11 @@ const FEATURES = [
     icon: Presentation,
     title: 'Slide Mode',
     description: 'Export content as presentations for teaching or sharing with your team.',
+  },
+  {
+    icon: SquareStack,
+    title: 'Flashcard Practice',
+    description: 'Test your knowledge with smart flashcards and spaced repetition for better retention.',
   },
   {
     icon: Sparkles,

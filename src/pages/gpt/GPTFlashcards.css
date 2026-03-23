@@ -1,0 +1,170 @@
+.flashcards-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 64px 24px;
+}
+
+.flashcards-hero {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.flashcards-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 100px;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.flashcards-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0 0 16px;
+}
+
+.flashcards-hero p {
+  font-size: 18px;
+  color: var(--text);
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Coming Soon */
+.flashcards-coming-soon {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 48px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.coming-soon-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: var(--accent-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.flashcards-coming-soon h2 {
+  font-size: 28px;
+  color: var(--text-h);
+  margin: 0 0 12px;
+}
+
+.flashcards-coming-soon p {
+  font-size: 16px;
+  color: var(--text);
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Preview Grid */
+.flashcards-preview {
+  margin-bottom: 48px;
+}
+
+.flashcards-preview h3 {
+  font-size: 20px;
+  color: var(--text-h);
+  margin: 0 0 24px;
+  text-align: center;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.preview-card {
+  padding: 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.preview-card svg {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.preview-card h4 {
+  font-size: 15px;
+  color: var(--text-h);
+  margin: 0 0 8px;
+}
+
+.preview-card p {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* CTA */
+.flashcards-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 12px;
+  margin-bottom: 48px;
+}
+
+.flashcards-cta svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.flashcards-cta p {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+}
+
+.flashcards-cta a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Back Link */
+.flashcards-back {
+  text-align: center;
+}
+
+.back-link {
+  color: var(--text);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}

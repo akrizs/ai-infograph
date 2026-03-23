@@ -1,0 +1,29 @@
+{
+  "id": "phase2-expansion",
+  "name": "Phase 2 Expansion - AI Education Sections",
+  "status": "active",
+  "objective": "Add 5 new educational sections: QuickStart, Glossary, Scaling Laws, Open Source Models, Image Generation",
+  "context_files": [
+    "/home/akristensen.guest/.config/opencode/context/core/standards/code-quality.md"
+  ],
+  "reference_files": [
+    "/home/akristensen.guest/ai-infograph/src/App.tsx",
+    "/home/akristensen.guest/ai-infograph/src/index.css",
+    "/home/akristensen.guest/ai-infograph/src/App.css",
+    "/home/akristensen.guest/ai-infograph/src/components/TokenVisualizer.tsx",
+    "/home/akristensen.guest/ai-infograph/src/components/PricingTable.tsx",
+    "/home/akristensen.guest/ai-infograph/src/data/models.ts"
+  ],
+  "exit_criteria": [
+    "QuickStart section added with learning path overview",
+    "Glossary section added with searchable A-Z and links",
+    "Scaling Laws section added covering compute scaling, emergent capabilities, Chinchilla law",
+    "Open Source Models section added covering Llama, Mistral, Gemma, DeepSeek",
+    "Image Generation section added covering DALL-E, Stable Diffusion, SDXL, Flux",
+    "All sections follow existing visual style (purple accent, dark mode, 1126px container)",
+    "Build passes"
+  ],
+  "subtask_count": 5,
+  "completed_count": 0,
+  "created_at": "2026-03-23T00:00:00Z"
+}

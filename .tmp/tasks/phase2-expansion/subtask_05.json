@@ -1,0 +1,30 @@
+{
+  "id": "phase2-expansion-05",
+  "seq": "05",
+  "title": "ImageGeneration - DALL-E, Stable Diffusion, SDXL, Flux",
+  "status": "pending",
+  "depends_on": [],
+  "parallel": true,
+  "suggested_agent": "OpenFrontendSpecialist",
+  "context_files": [
+    "/home/akristensen.guest/.config/opencode/context/core/standards/code-quality.md"
+  ],
+  "reference_files": [
+    "/home/akristensen.guest/ai-infograph/src/App.tsx",
+    "/home/akristensen.guest/ai-infograph/src/index.css",
+    "/home/akristensen.guest/ai-infograph/src/components/TokenVisualizer.tsx",
+    "/home/akristensen.guest/ai-infograph/src/components/VLMMultimodal.tsx"
+  ],
+  "acceptance_criteria": [
+    "Component renders with section-tag, H2, and description",
+    "Covers DALL-E, Stable Diffusion, SDXL, Flux fundamentals",
+    "Explains diffusion models vs other approaches",
+    "Uses 3-column card grid layout",
+    "Follows existing visual style (purple accent, dark mode)",
+    "Creates both .tsx and .css files"
+  ],
+  "deliverables": [
+    "src/components/ImageGeneration.tsx",
+    "src/components/ImageGeneration.css"
+  ]
+}

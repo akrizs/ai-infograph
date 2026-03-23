@@ -1,0 +1,32 @@
+{
+  "id": "ai-infograph-expand-03",
+  "seq": "03",
+  "title": "Fine-tuning vs RAG Section",
+  "status": "pending",
+  "depends_on": ["02"],
+  "parallel": false,
+  "suggested_agent": "OpenFrontendSpecialist",
+  "context_files": [
+    "/home/akristensen.guest/.config/opencode/context/core/standards/code-quality.md"
+  ],
+  "reference_files": [
+    "src/App.tsx",
+    "src/App.css",
+    "src/components/ContextWindow.tsx"
+  ],
+  "acceptance_criteria": [
+    "Section tag 'Concept' displays correctly",
+    "H2 heading 'Fine-tuning vs RAG' present",
+    "Comparison table/cards showing: When to use, Cost, Latency, Use cases",
+    "Visual decision flow diagram (start → task type → recommendation)",
+    "Provider badges (OpenAI, Anthropic, Cohere) with relevant logos/colors",
+    "Dark mode styles applied correctly",
+    "Follows io-diagram pattern from existing sections"
+  ],
+  "deliverables": [
+    "src/components/FineTuningVsRAG.tsx",
+    "src/components/FineTuningVsRAG.css"
+  ],
+  "bounded_context": "ai-education",
+  "module": "components"
+}
