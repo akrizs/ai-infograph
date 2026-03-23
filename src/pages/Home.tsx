@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Brain, Sparkles, Layers, BookOpen, Presentation, Zap, ArrowRight, SquareStack } from 'lucide-react'
+import { Brain, Sparkles, Layers, BookOpen, Presentation, Zap, ArrowRight, SquareStack, Terminal, Package, Monitor, Network } from 'lucide-react'
 import './Home.css'
 
 const TOPICS = [
@@ -14,7 +14,51 @@ const TOPICS = [
     stats: '24 sections',
   },
   {
-    id: 'coming-soon',
+    id: 'linux',
+    title: 'Linux',
+    subtitle: 'Operating Systems',
+    icon: Terminal,
+    color: '#e95420',
+    description: 'Master the command line, system administration, processes, and permissions.',
+    path: '/linux',
+    stats: 'Coming soon',
+    disabled: true,
+  },
+  {
+    id: 'containers',
+    title: 'Containers',
+    subtitle: 'Docker & Kubernetes',
+    icon: Package,
+    color: '#2496ed',
+    description: 'Container fundamentals, Docker, Kubernetes, Helm, and production deployments.',
+    path: '/containers',
+    stats: 'Coming soon',
+    disabled: true,
+  },
+  {
+    id: 'virtualization',
+    title: 'Virtualization',
+    subtitle: 'VMs & Hypervisors',
+    icon: Monitor,
+    color: '#7c4dff',
+    description: 'Virtual machines, hypervisors, VMware, KVM, and infrastructure virtualization.',
+    path: '/virtualization',
+    stats: 'Coming soon',
+    disabled: true,
+  },
+  {
+    id: 'networking',
+    title: 'Networking',
+    subtitle: 'Complete Network Guide',
+    icon: Network,
+    color: '#10b981',
+    description: 'From physical cables to cloud networking: LAN, WAN, VLANs, routing, firewalls, VPNs, and more.',
+    path: '/networking',
+    stats: 'Coming soon',
+    disabled: true,
+  },
+  {
+    id: 'cv',
     title: 'Computer Vision',
     subtitle: 'Coming Soon',
     icon: Layers,
@@ -25,7 +69,7 @@ const TOPICS = [
     disabled: true,
   },
   {
-    id: 'coming-soon-2',
+    id: 'rl',
     title: 'Reinforcement Learning',
     subtitle: 'Coming Soon',
     icon: Zap,
@@ -69,10 +113,10 @@ export default function Home() {
           <Sparkles size={14} />
           Interactive AI Education
         </div>
-        <h1>Master AI Concepts</h1>
+        <h1>Master Modern Technology</h1>
         <p className="hero-subtitle">
-          Learn AI and machine learning through interactive guides, visualizations,
-          and hands-on examples. From fundamentals to production-ready applications.
+          Interactive guides for AI, Linux, containers, networking, and more.
+          Learn through visualizations, hands-on examples, and practical exercises.
         </p>
       </section>
 
@@ -129,9 +173,9 @@ export default function Home() {
       {/* CTA */}
       <section className="home-cta">
         <h2>Ready to Start?</h2>
-        <p>Dive into the world of large language models and transformers.</p>
+        <p>Choose a learning path above or dive into any topic that interests you.</p>
         <Link to="/gpt" className="cta-button">
-          Begin Learning
+          Start with AI & LLMs
           <ArrowRight size={18} />
         </Link>
       </section>
