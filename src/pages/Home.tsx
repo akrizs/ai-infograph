@@ -169,16 +169,6 @@ export default function Home() {
           })}
         </div>
       </section>
-
-      {/* CTA */}
-      <section className="home-cta">
-        <h2>Ready to Start?</h2>
-        <p>Choose a learning path above or dive into any topic that interests you.</p>
-        <Link to="/gpt" className="cta-button">
-          Start with AI & LLMs
-          <ArrowRight size={18} />
-        </Link>
-      </section>
     </div>
   )
 }
