@@ -124,35 +124,6 @@
   line-height: 1.5;
 }
 
-/* CTA */
-.slides-cta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 20px;
-  background: var(--accent-bg);
-  border: 1px solid var(--accent-border);
-  border-radius: 12px;
-  margin-bottom: 48px;
-}
-
-.slides-cta svg {
-  color: var(--accent);
-  flex-shrink: 0;
-}
-
-.slides-cta p {
-  font-size: 14px;
-  color: var(--text);
-  margin: 0;
-}
-
-.slides-cta a {
-  color: var(--accent);
-  font-weight: 500;
-}
-
 /* Back Link */
 .slides-back {
   text-align: center;

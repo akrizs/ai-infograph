@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Presentation, Clock, Image, FileText, AlertCircle } from 'lucide-react'
+import { Presentation, Clock, Image, FileText } from 'lucide-react'
 import './GPTSlides.css'
 
 export default function GPTSlides() {
@@ -49,14 +49,6 @@ export default function GPTSlides() {
             <p>Detailed speaker notes generated for each slide automatically</p>
           </div>
         </div>
-      </div>
-
-      {/* Beta Signup */}
-      <div className="slides-cta">
-        <AlertCircle size={20} />
-        <p>
-          Want early access? <a href="#signup">Sign up for updates</a> when this feature launches.
-        </p>
       </div>
 
       {/* Back Link */}

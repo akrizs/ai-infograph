@@ -68,10 +68,6 @@ export default function MainLayout({ children, showNav = true }: MainLayoutProps
       <main className="layout-main">
         {children}
       </main>
-
-      <footer className="layout-footer">
-        <p>Built with care for learning AI concepts</p>
-      </footer>
     </div>
   )
 }
