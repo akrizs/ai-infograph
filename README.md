@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+# AI Learn
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive learning platform for understanding AI, LLMs, and machine learning concepts.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Comprehensive Coverage**: From tokens and transformers to deployment and cost optimization
+- **Interactive Content**: Visualizers, calculators, and hands-on examples
+- **Adaptive Learning**: Toggle between simple and advanced content modes
+- **Multi-Topic Platform**: Designed to expand with additional learning paths
+- **Dark Mode**: Automatic dark/light mode based on system preferences
+- **Responsive Design**: Works on desktop and mobile devices
 
-## React Compiler
+## Learning Paths
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### GPT & LLMs
+- Tokenization and BPE
+- Transformer Architecture
+- Training Pipeline (Pre-training, SFT, RLHF, DPO)
+- Scaling Laws & Emergent Capabilities
+- Open Source Models (Llama, Mistral, Qwen, DeepSeek)
+- VLM & Multimodal Models
+- Image Generation (DALL-E, Stable Diffusion, Flux)
+- Embeddings & Vector Search
+- RAG Architecture
+- Fine-tuning vs RAG
+- LLM Evaluation & Benchmarks
+- Alignment & Safety
+- Prompt Engineering
+- System Prompts
+- Temperature & Sampling
+- Memory & State
+- Streaming Responses
+- Agents & Tool Use
+- Pricing & Infrastructure
+- Cost Calculator
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
+- Node.js 18+ 
+- npm 9+
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```bash
+# Clone the repository
+git clone https://github.com/akrizs/ai-infograph.git
+cd ai-infograph
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The app will be available at `http://localhost:5173`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build for Production
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
+npm run preview
 ```
+
+## Project Structure
+
+```
+src/
+├── components/       # Reusable UI components
+├── pages/           # Page components
+│   ├── Home.tsx    # Landing page
+│   └── gpt/        # GPT learning path
+├── layouts/         # Layout components
+├── context/         # React context providers
+├── data/           # Static data files
+└── App.tsx         # Router configuration
+```
+
+## Technology Stack
+
+- **React 19** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **React Router** - Client-side routing
+- **Tailwind CSS 4** - Styling
+- **Lucide React** - Icons
+
+## Deployment
+
+The project is automatically deployed to GitHub Pages on push to the `main` branch via GitHub Actions.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues and pull requests.
+
+## License
+
+MIT
